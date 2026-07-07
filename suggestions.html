@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion | Robotics Club UCE</title>
+    <meta name="description" content="Share feedback and coordinate project suggestions with UCE Robotics.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header static-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Robotics Club Logo" class="logo-img" onerror="this.src='design/logo.png'">
+            </a>
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-panel">
+                <ul class="nav-list">
+                    <li><a href="index.html#about" class="nav-item">About Us</a></li>
+                    <li><a href="team.html" class="nav-item">Crew</a></li>
+                    <li><a href="events.html" class="nav-item">Events</a></li>
+                    <li><a href="certificates.html" class="nav-item">Certificates</a></li>
+                    <li><a href="suggestions.html" class="nav-item">Suggestion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="subpage-container">
+        <!-- Suggestions Section -->
+        <main class="main-content">
+            <section class="content-section suggestions-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <span class="section-tag">Interactive Feedback</span>
+                        <h2 class="section-title">Suggestion</h2>
+                    </div>
+                    <div class="suggestions-grid">
+                        <div class="suggestions-info">
+                            <h3 class="suggestions-info-title">Have an idea?</h3>
+                            <p>We are always looking to improve our lab, introduce new projects, and coordinate better workshops. Share your suggestions, feature requests, or collaboration proposals with us anonymously or with your contact info.</p>
+                        </div>
+                        <form id="suggestion-form" class="suggestion-form">
+                            <div class="form-group">
+                                <label for="suggest-name">Name (Optional)</label>
+                                <input type="text" id="suggest-name" placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="suggest-email">Email (Optional)</label>
+                                <input type="email" id="suggest-email" placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="suggest-type">Category</label>
+                                <select id="suggest-type">
+                                    <option value="workshop">Workshop Idea</option>
+                                    <option value="project">Project Proposal</option>
+                                    <option value="lab">Lab Equipment</option>
+                                    <option value="other">Other Feedback</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="suggest-message">Your Suggestion</label>
+                                <textarea id="suggest-message" rows="5" required placeholder="Describe your suggestion in detail..."></textarea>
+                            </div>
+                            <button type="submit" class="primary-btn submit-btn">Submit Suggestion</button>
+                            <div id="form-feedback" class="form-feedback-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-overlay"></div>
+        <div class="footer-content">
+            <div class="footer-top">
+                <h2 class="footer-title">Let's build something extraordinary.</h2>
+                <div class="footer-links">
+                    <a href="suggestions.html" class="footer-link">Connect &rarr;</a>
+                    <a href="https://www.instagram.com/roboticsclubuce/" target="_blank" class="footer-link">Instagram &rarr;</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Robotics Club, UCE.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consolidated App Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>

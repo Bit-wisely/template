@@ -1,0 +1,6 @@
+# Ignore scratch/ temporary scripts
+scratch/
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

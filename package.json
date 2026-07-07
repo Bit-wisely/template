@@ -1,0 +1,11 @@
+{
+  "name": "robotics-club-uce",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "serve . -p 3000 --no-clipboard",
+    "start": "serve . -p 3000 --no-clipboard"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

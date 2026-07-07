@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club | UCE</title>
+    <meta name="description" content="Welcome to the Robotics Club UCE — where engineers, programmers, and designers build the future together.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ─── Header Navigation ─────────────────────────────────────────────── -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Robotics Club Logo" class="logo-img" onerror="this.src='design/logo.png'">
+            </a>
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-panel">
+                <ul class="nav-list">
+                    <li><a href="#about"          class="nav-item">About Us</a></li>
+                    <li><a href="team.html"        class="nav-item">Crew</a></li>
+                    <li><a href="events.html"      class="nav-item">Events</a></li>
+                    <li><a href="certificates.html" class="nav-item">Certificates</a></li>
+                    <li><a href="suggestions.html" class="nav-item">Suggestion</a></li>
+                    <li><a href="#membership"      class="nav-item nav-join-btn" id="joinNavBtn">Join Club</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ─── Hero Section — wishlabs.ai Parallax Scroll ───────────────────── -->
+    <section class="hero-section" id="hero">
+        <div class="hero-sticky">
+
+            <!-- Layer 0: Sky gradient (blue → pink glow → purple) -->
+            <div class="hero-layer" id="layer-sky">
+                <div class="hero-sky"></div>
+            </div>
+
+            <!-- Layer 1: Palace peak + pink clouds — the centerpiece BEHIND the text -->
+            <div class="hero-layer" id="layer-palace">
+                <img src="design/wishlabs/layer4.png" alt="" draggable="false">
+            </div>
+
+            <!-- Layer 2 (TEXT): Robotics wordmark — smokestacks poke through the letters -->
+            <div class="hero-layer" id="layer-text">
+                <div class="hero-text-container">
+                    <div class="hero-top-row">
+                        <span class="hero-welcome">Welcome to</span>
+                        <span class="hero-club-tag">Club</span>
+                    </div>
+                    <h1 class="hero-main-title">Robotics</h1>
+                    <div class="hero-subtitle-row">
+                        <p class="hero-subtitle">We shape the intelligence<br>behind modern creativity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Layer 3: Misty purple fog hills — sit IN FRONT of the text's lower half -->
+            <div class="hero-layer" id="layer-mist">
+                <img src="design/wishlabs/layer2.png" alt="" draggable="false">
+            </div>
+
+            <!-- Layer 4: Closest foreground hill — flies past as you scroll -->
+            <div class="hero-layer" id="layer-fg">
+                <img src="design/wishlabs/layer3.png" alt="" draggable="false">
+            </div>
+
+            <!-- Layer 5: Mid-scroll tagline — fades in once the title clears -->
+            <div class="hero-layer" id="layer-tagline">
+                <div class="hero-tagline-container">
+                    <p class="hero-tagline-text">We run sessions,<br>lead workshops,<br>and <span class="hero-tagline-accent">build the future</span><br>together.</p>
+                    <p class="hero-tagline-sub">Hands-on, every semester. Driven by curiosity.</p>
+                </div>
+            </div>
+
+            <!-- Scroll hint -->
+            <div class="hero-scroll-hint" id="scrollHint">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Main Content ──────────────────────────────────────────────────── -->
+    <main class="main-content">
+
+        <!-- ScrollReveal Statement -->
+        <div class="scroll-reveal-section">
+            <p class="scroll-reveal-text" id="scrollRevealText">We run sessions, lead workshops, and build hardware — hands-on, every semester. Driven by curiosity. Powered by passion.</p>
+        </div>
+
+        <!-- ─── Photo Wall — cursor-parting gallery (from robuce.vercel.app) ── -->
+        <section class="content-section photowall-section" id="gallery">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">01 / CORE MISSION</span>
+                    <h2 class="section-title">Fostering Robotics &amp; Embedded Engineering</h2>
+                </div>
+
+                <div class="photowall" id="photowall">
+                    <!-- Scattered photos — parallax-react to cursor -->
+                    <div class="pw-photo" data-depth="1.6" style="--x:6%;  --y:14%;  --rot:-7deg; --w:190px;"><img src="design/pic1.png" alt="Robotics project" loading="lazy"></div>
+                    <div class="pw-photo" data-depth="2.4" style="--x:22%; --y:6%;   --rot:4deg;  --w:210px;"><img src="design/pic2.png" alt="Team building" loading="lazy"></div>
+                    <div class="pw-photo" data-depth="1.1" style="--x:41%; --y:12%;  --rot:-3deg; --w:230px;"><img src="design/pic3.png" alt="Workshop session" loading="lazy"></div>
+                    <div class="pw-photo" data-depth="2.0" style="--x:63%; --y:5%;   --rot:6deg;  --w:200px;"><img src="design/pic4.png" alt="Competition" loading="lazy"></div>
+                    <div class="pw-photo" data-depth="1.4" style="--x:80%; --y:15%;  --rot:-5deg; --w:180px;"><img src="design/pic5.png" alt="Lab equipment" loading="lazy"></div>
+                    <div class="pw-photo" data-depth="2.8" style="--x:14%; --y:48%;  --rot:5deg;  --w:220px;"><img src="design/pic6.jpg" alt="Drone build" loading="lazy"></div>
+                    <div class="pw-photo" data-depth="1.8" style="--x:37%; --y:52%;  --rot:-4deg; --w:200px;"><img src="design/pic1.png" alt="Circuit design" loading="lazy"></div>
+                    <div class="pw-photo" data-depth="1.2" style="--x:58%; --y:50%;  --rot:3deg;  --w:215px;"><img src="design/pic3.png" alt="Presentation" loading="lazy"></div>
+                    <div class="pw-photo" data-depth="2.2" style="--x:78%; --y:47%;  --rot:-6deg; --w:195px;"><img src="design/pic5.png" alt="Prototype" loading="lazy"></div>
+
+                    <!-- Cursor hint card -->
+                    <div class="pw-hint">
+                        <span class="pw-hint-tag">MOVING CURSOR</span>
+                        <h4 class="pw-hint-title">Hover the photos wall</h4>
+                        <p class="pw-hint-sub">Move your cursor to part the photography wall and highlight a moment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="content-section about-section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Overview</span>
+                    <h2 class="section-title">About Us</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="lead-text">
+                            We are a student-led robotics community at UCE, fostering automation, electronics, and design thinking.
+                        </p>
+                        <p>
+                            Our club provides a creative space where hardware engineers, programmers, and designers collaborate on real-world projects. From autonomous drone navigation to industrial automation prototypes, we push the limits of technology.
+                        </p>
+                        <div class="stats-row">
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="150">0</span>
+                                <span class="stat-label">Members</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="25">0</span>
+                                <span class="stat-label">Innovations</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="15">0</span>
+                                <span class="stat-label">Competitions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image-card">
+                        <img src="assets/images/about.png" alt="Robotics work" class="about-img" onerror="this.src='design/pic1.png'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Membership / Join Club Section ──────────────────────────── -->
+        <section class="content-section membership-section" id="membership">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">05 / REGISTER</span>
+                    <h2 class="section-title">Get Your Member Pass</h2>
+                    <p class="section-subtitle">Membership is open to all UCE students. One pass, four years of access.</p>
+                </div>
+
+                <div class="membership-layout">
+
+                    <!-- Left: Benefits list -->
+                    <div class="membership-info">
+                        <h3 class="membership-info-title">What you unlock</h3>
+                        <ul class="benefit-list">
+                            <li class="benefit-item">
+                                <span class="benefit-icon">✦</span>
+                                <div>
+                                    <strong>Interactive Tech Sessions</strong>
+                                    <p>Participate in expert-led lectures, demos, and tutorials every month.</p>
+                                </div>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">✦</span>
+                                <div>
+                                    <strong>Hands-On Workshops</strong>
+                                    <p>Apply concepts in real lab environments — Arduino, drones, AI.</p>
+                                </div>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">✦</span>
+                                <div>
+                                    <strong>Collaborative Project Clusters</strong>
+                                    <p>Team up with peers to design hardware/software for real-world impact.</p>
+                                </div>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">✦</span>
+                                <div>
+                                    <strong>Priority Event Entry</strong>
+                                    <p>Early access to competitions, coding challenges, and tech seminars.</p>
+                                </div>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">✦</span>
+                                <div>
+                                    <strong>Verified Certificates</strong>
+                                    <p>Earn shareable digital certificates for every event you attend.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="membership-closed-note">
+                            <span class="closed-dot"></span>
+                            Registration temporarily paused — reopens with the new student batch.
+                        </p>
+                    </div>
+
+                    <!-- Right: 3D Member Pass Card -->
+                    <div class="membership-card-wrap">
+                        <div class="member-card" id="memberCard">
+                            <!-- Ambient glow orbs -->
+                            <div class="card-glow card-glow-tl"></div>
+                            <div class="card-glow card-glow-br"></div>
+
+                            <!-- ACTIVE ribbon -->
+                            <div class="card-ribbon">
+                                <span>ACTIVE</span>
+                            </div>
+
+                            <!-- Card content -->
+                            <div class="card-inner">
+                                <p class="card-label">MEMBER PASS</p>
+
+                                <div class="card-price">
+                                    <span class="card-price-amount">₹150</span>
+                                    <span class="card-price-period">/ 4 YEARS</span>
+                                </div>
+
+                                <div class="card-divider"></div>
+
+                                <p class="card-desc">
+                                    Get full membership to access the lab, participate in technical workshops, and collaborate on projects.
+                                </p>
+
+                                <ul class="card-features">
+                                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Lab access &amp; project space</li>
+                                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> All workshops &amp; events</li>
+                                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Digital certificates</li>
+                                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority competition entry</li>
+                                </ul>
+
+                                <button class="card-cta" onclick="openJoinModal()">
+                                    Get 4-Year Pass
+                                    <svg viewBox="0 0 24 24" fill="none"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+
+                                <div class="card-secure">
+                                    <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Secure Instant Registration
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ─── Footer ────────────────────────────────────────────────────────── -->
+    <footer class="site-footer">
+        <div class="footer-overlay"></div>
+        <div class="footer-content">
+            <div class="footer-top">
+                <h2 class="footer-title">Let's build something extraordinary.</h2>
+                <div class="footer-links">
+                    <a href="suggestions.html" class="footer-link">Connect &rarr;</a>
+                    <a href="https://www.instagram.com/roboticsclubuce/" target="_blank" class="footer-link">Instagram &rarr;</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Robotics Club, UCE.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ─── Join Modal ─────────────────────────────────────────────────────── -->
+    <div class="join-modal-backdrop" id="joinModalBackdrop" onclick="closeJoinModal()">
+        <div class="join-modal" onclick="event.stopPropagation()">
+            <button class="join-modal-close" onclick="closeJoinModal()" aria-label="Close">&times;</button>
+
+            <div class="join-modal-header">
+                <span class="join-modal-tag">// SECURE CADET INTAKE</span>
+                <h3 class="join-modal-title">Join the Robotics Club</h3>
+                <p class="join-modal-sub">One-time ₹150 fee covers all 4 years at UCE.</p>
+            </div>
+
+            <form id="joinForm" class="join-form" onsubmit="submitJoinForm(event)">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required placeholder="e.g. Aditya Verma">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" required pattern="[0-9]{10}" maxlength="10" placeholder="10-digit number" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" required placeholder="you@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Semester</label>
+                        <select required>
+                            <option value="" disabled selected>Select</option>
+                            <option>Semester 1</option><option>Semester 2</option>
+                            <option>Semester 3</option><option>Semester 4</option>
+                            <option>Semester 5</option><option>Semester 6</option>
+                            <option>Semester 7</option><option>Semester 8</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Branch / Division</label>
+                        <select required>
+                            <option value="" disabled selected>Select</option>
+                            <option>Computer Science</option>
+                            <option>Cybersecurity</option>
+                            <option>Artificial Intelligence</option>
+                            <option>Electronics</option>
+                            <option>Electrical</option>
+                            <option>Polymer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>KTU ID / Register Number</label>
+                    <input type="text" required placeholder="e.g. KTU22CS001">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="form-btn-cancel" onclick="closeJoinModal()">Cancel</button>
+                    <button type="submit" class="form-btn-submit">Enrol Now →</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ─── Toast notification ────────────────────────────────────────────── -->
+    <div class="join-toast" id="joinToast">
+        <span class="toast-dot"></span>
+        <span id="joinToastMsg">Welcome to the Robotics Club!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/parallax.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        function openJoinModal() {
+            document.getElementById('joinModalBackdrop').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeJoinModal() {
+            document.getElementById('joinModalBackdrop').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        function submitJoinForm(e) {
+            e.preventDefault();
+            closeJoinModal();
+            const toast = document.getElementById('joinToast');
+            document.getElementById('joinToastMsg').textContent = 'Enrolment successful! Welcome to the UCE Robotics grid.';
+            toast.classList.add('show');
+            document.getElementById('joinForm').reset();
+            setTimeout(() => toast.classList.remove('show'), 4500);
+        }
+        // Close modal on Escape
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeJoinModal(); });
+    </script>
+</body>
+</html>
